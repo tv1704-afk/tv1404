@@ -1,0 +1,10 @@
+with open('Perepis.txt', 'r') as file:
+    user_years = [int(input()),int(input())]
+    seventy_eight = int(0)
+    for i in file:
+        year = i[:-4]
+        if year<1978:
+            seventy_five += 1
+        if (year>=user_years[0]) and (year<=user_years[1]):
+            print(i[:len(i)-7])
+    print("людей, родившихся до 1978:",seventy_eight)
